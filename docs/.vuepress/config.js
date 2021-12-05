@@ -6,9 +6,8 @@ module.exports = {
   theme: 'vdoing', // 使用npm包主题
   // theme: require.resolve('../../theme-vdoing'), // 使用本地主题
 
-  title: "Evan's blog",
-  description: 'web前端技术博客,简洁至上,专注web前端学习与总结。JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github等技术文章。',
-  // base: '/', // 格式：'/<仓库名>/'， 默认'/'
+  title: "前端自学资源",
+  description: '前端自学资源网是资源和分享内容的大聚合。旨在为前端自学者提供一系列清晰的学习路线、靠谱的资源、高效的工具、和务实的文章。',
   markdown: {
     lineNumbers: true, // 代码行号
   },
