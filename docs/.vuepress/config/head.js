@@ -6,7 +6,7 @@ module.exports = [
     'meta',
     {
       name: 'keywords',
-      content: '前端自学资源,前端,自学,资源,前端面试,前端学习路线,前端开发,前端工具,web,JavaScript,js,ES6,TypeScript,vue,react,css3,html5,Node',
+      content: '前端自学网,前端,自学,资源,前端面试,前端学习路线,前端开发,前端工具,web,JavaScript,js,ES6,TypeScript,vue,react,css3,html5,Node',
     },
   ],
   ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证
