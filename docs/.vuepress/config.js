@@ -1,5 +1,3 @@
-// const htmlModules = require('./config/htmlModules.js');
-
 module.exports = {
   // theme: 'vdoing', // 使用npm包主题
   theme: require.resolve('../../theme-vdoing'), // 使用本地主题
@@ -86,7 +84,7 @@ module.exports = {
       showToArticle: false, // 显示到文章页底部，默认true
       // moreArticle: '/archives' // “更多文章”跳转的页面，默认'/archives'
     },
-    // rightMenuBar: false, // 是否显示右侧文章大纲栏，默认true (屏宽小于1300px下无论如何都不显示)
+    rightMenuBar: false, // 是否显示右侧文章大纲栏，默认true (屏宽小于1300px下无论如何都不显示)
     // sidebarOpen: false, // 初始状态是否打开侧边栏，默认true
     // pageButton: false, // 是否显示快捷翻页按钮，默认true
 
@@ -130,7 +128,11 @@ module.exports = {
       copyrightInfo:
         '<a href="/">前端自学网</a> | <a href="/disclaimer/">免责声明</a>', // 博客版权信息，支持a标签
     },
-    // htmlModules // 插入hmtl(广告)模块
+    htmlModules: {
+      pageB: `
+        <p>如果你有不错的资源，欢迎在留言区留言，一起共建前端知识库。</p>
+      `
+    } // 插入hmtl(广告)模块
   },
 
 
