@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.2.0/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.2.7"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.2.0/dist/index.umd.min.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, data) => {
+        const {
+          Markmap
+        } = getMarkmap();
+        window.mm = Markmap.create('svg#mindmap', getOptions == null ? void 0 : getOptions(), data);
+      })(() => window.markmap,null,{"t":"heading","d":1,"p":{"lines":[1,2]},"v":"JavaScript","c":[{"t":"heading","d":2,"p":{"lines":[3,4]},"v":"入门","c":[{"t":"heading","d":3,"p":{"lines":[4,5]},"v":"<a href=\"https://cn.history.js.org/\" target=\"_blank\">JS发展史</a>"},{"t":"heading","d":3,"p":{"lines":[5,6]},"v":"语言核心概念","c":[{"t":"heading","d":4,"p":{"lines":[6,7]},"v":"<a href=\"https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/JavaScript_basics#%E5%8F%98%E9%87%8F%EF%BC%88variable%EF%BC%89\" target=\"_blank\">变量</a>"},{"t":"heading","d":4,"p":{"lines":[7,8]},"v":"<a href=\"https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript/Building_blocks/conditionals\" target=\"_blank\">流程控制</a>"},{"t":"heading","d":4,"p":{"lines":[8,9]},"v":"<a href=\"https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript/Building_blocks/Looping_code\" target=\"_blank\">循环</a>"},{"t":"heading","d":4,"p":{"lines":[9,10]},"v":"<a href=\"https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript/Building_blocks/Functions\" target=\"_blank\">函数</a>"},{"t":"heading","d":4,"p":{"lines":[10,11]},"v":"<a href=\"https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript/Building_blocks/Events\" target=\"_blank\">事件</a>"},{"t":"heading","d":4,"p":{"lines":[11,12]},"v":"<a href=\"xxx\" target=\"_blank\">DOM</a>"},{"t":"heading","d":4,"p":{"lines":[12,13]},"v":"<a href=\"xxx\" target=\"_blank\">BOM</a>"},{"t":"heading","d":4,"p":{"lines":[13,14]},"v":"<a href=\"xxx\" target=\"_blank\">网络请求</a>"}]},{"t":"heading","d":3,"p":{"lines":[14,15]},"v":"<a href=\"xxx\" target=\"_blank\">表单处理</a>"},{"t":"heading","d":3,"p":{"lines":[15,16]},"v":"<a href=\"xxx\" target=\"_blank\">错误处理</a>"},{"t":"heading","d":3,"p":{"lines":[16,17]},"v":"<a href=\"xxx\" target=\"_blank\">HTML5 API</a>"},{"t":"heading","d":3,"p":{"lines":[17,18]},"v":"<a href=\"xxx\" target=\"_blank\">正则表达式</a>"},{"t":"heading","d":3,"p":{"lines":[18,19]},"v":"<a href=\"xxx\" target=\"_blank\">Canvas</a>"},{"t":"heading","d":3,"p":{"lines":[19,20]},"v":"<a href=\"xxx\" target=\"_blank\">ES6</a>","c":[{"t":"heading","d":4,"p":{"lines":[20,21]},"v":"<a href=\"xxx\" target=\"_blank\">箭头函数</a>"},{"t":"heading","d":4,"p":{"lines":[21,22]},"v":"<a href=\"xxx\" target=\"_blank\">面向对象</a>"},{"t":"heading","d":4,"p":{"lines":[22,23]},"v":"<a href=\"xxx\" target=\"_blank\">Promise</a>"},{"t":"heading","d":4,"p":{"lines":[23,24]},"v":"<a href=\"xxx\" target=\"_blank\">代理和反射</a>"},{"t":"heading","d":4,"p":{"lines":[24,25]},"v":"<a href=\"xxx\" target=\"_blank\">模块化</a>"}]}]},{"t":"heading","d":2,"p":{"lines":[26,27]},"v":"进阶","c":[{"t":"heading","d":3,"p":{"lines":[27,28]},"v":"<a href=\"xxx\" target=\"_blank\">作用域</a>","c":[{"t":"heading","d":4,"p":{"lines":[28,29]},"v":"<a href=\"xxx\" target=\"_blank\">词法作用域</a>"},{"t":"heading","d":4,"p":{"lines":[29,30]},"v":"<a href=\"xxx\" target=\"_blank\">作用域提升</a>"}]},{"t":"heading","d":3,"p":{"lines":[30,31]},"v":"<a href=\"xxx\" target=\"_blank\">闭包</a>"},{"t":"heading","d":3,"p":{"lines":[31,32]},"v":"<a href=\"xxx\" target=\"_blank\">this</a>"},{"t":"heading","d":3,"p":{"lines":[32,33]},"v":"<a href=\"xxx\" target=\"_blank\">异步</a>","c":[{"t":"heading","d":4,"p":{"lines":[33,34]},"v":"<a href=\"xxx\" target=\"_blank\">回调函数</a>"},{"t":"heading","d":4,"p":{"lines":[34,35]},"v":"<a href=\"xxx\" target=\"_blank\">Promise</a>"},{"t":"heading","d":4,"p":{"lines":[35,36]},"v":"<a href=\"xxx\" target=\"_blank\">迭代器生成器</a>"},{"t":"heading","d":4,"p":{"lines":[36,37]},"v":"<a href=\"xxx\" target=\"_blank\">async await</a>"}]},{"t":"heading","d":3,"p":{"lines":[37,38]},"v":"<a href=\"xxx\" target=\"_blank\">框架设计</a>","c":[{"t":"heading","d":4,"p":{"lines":[38,39]},"v":"<a href=\"xxx\" target=\"_blank\">兼容性</a>"},{"t":"heading","d":4,"p":{"lines":[39,40]},"v":"<a href=\"xxx\" target=\"_blank\">模块化</a>"},{"t":"heading","d":4,"p":{"lines":[40,41]},"v":"<a href=\"xxx\" target=\"_blank\">MVVM</a>"},{"t":"heading","d":4,"p":{"lines":[41,42]},"v":"<a href=\"xxx\" target=\"_blank\">组件化</a>"}]},{"t":"heading","d":3,"p":{"lines":[42,43]},"v":"<a href=\"xxx\" target=\"_blank\">JS设计模式</a>"},{"t":"heading","d":3,"p":{"lines":[43,44]},"v":"<a href=\"xxx\" target=\"_blank\">函数</a>","c":[{"t":"heading","d":4,"p":{"lines":[44,45]},"v":"<a href=\"xxx\" target=\"_blank\">原型链</a>"},{"t":"heading","d":4,"p":{"lines":[45,46]},"v":"<a href=\"xxx\" target=\"_blank\">递归</a>"},{"t":"heading","d":4,"p":{"lines":[46,47]},"v":"<a href=\"xxx\" target=\"_blank\">面向对象</a>"}]}]}]})</script>
+</body>
+</html>
