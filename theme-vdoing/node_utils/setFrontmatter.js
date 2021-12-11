@@ -61,6 +61,7 @@ tags:
 title: ${file.name}
 date: ${dateStr}
 permalink: ${getPermalink()}${file.filePath.indexOf('_posts') > -1 ? os.EOL + 'sidebar: auto' : ''}${cateStr}${tagsStr}
+article: false
 ---`;
 
       fs.writeFileSync(file.filePath, `${fmData}${os.EOL}${fileMatterObj.content}`); // 写入
@@ -84,6 +85,11 @@ permalink: ${getPermalink()}${file.filePath.indexOf('_posts') > -1 ? os.EOL + 's
 
       if (!matterData.hasOwnProperty('permalink')) { // 永久链接
         matterData.permalink = getPermalink();
+        mark = true;
+      }
+
+      if (!matterData.hasOwnProperty('article')) { // 非文章页
+        matterData.article = false;
         mark = true;
       }
 

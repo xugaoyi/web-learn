@@ -12,20 +12,21 @@ module.exports = {
   themeConfig: {
     nav: [
       // { text: '首页', link: '/' },
-      {
-        text: '前端知识图谱',
-        link: '/web/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
-        items: [
-          // 说明：以下所有link的值只是在相应md文件定义的永久链接（不是什么特殊生成的编码）。另外，注意结尾是有斜杠的
-          {
-            text: '前端文章',
-            items: [
-              { text: 'JavaScript', link: '/pages/8143cc480faf9a11/' },
-              // { text: 'Vue', link: '/pages/5d463fbdb172d43b/' },
-            ],
-          },
-        ],
-      },
+      { text: '前端知识图谱', link: '/html-css/' },
+      // {
+      //   text: '前端知识图谱',
+      //   link: '/web/',
+      //   items: [
+      //     { text: 'HTML+CSS', link: '/html-css/' },
+      //     // {
+      //     //   text: '前端文章',
+      //     //   items: [
+      //     //     { text: 'JavaScript', link: '/pages/8143cc480faf9a11/' },
+      //     //     // { text: 'Vue', link: '/pages/5d463fbdb172d43b/' },
+      //     //   ],
+      //     // },
+      //   ],
+      // },
       { text: '免费视频', link: '/pages/859f95/' },
       { text: '常用工具', link: '/about/' },
       { text: '摸鱼必备', link: '/about/' },
@@ -63,7 +64,7 @@ module.exports = {
 
     category: false, // 是否打开分类功能，默认true。 如打开，会做的事情有：1. 自动生成的frontmatter包含分类字段 2.页面中显示与分类相关的信息和模块 3.自动生成分类页面（在@pages文件夹）。如关闭，则反之。
     tag: false, // 是否打开标签功能，默认true。 如打开，会做的事情有：1. 自动生成的frontmatter包含标签字段 2.页面中显示与标签相关的信息和模块 3.自动生成标签页面（在@pages文件夹）。如关闭，则反之。
-    // archive: false, // 是否打开归档功能，默认true。 如打开，会做的事情有：1.自动生成归档页面（在@pages文件夹）。如关闭，则反之。
+    archive: false, // 是否打开归档功能，默认true。 如打开，会做的事情有：1.自动生成归档页面（在@pages文件夹）。如关闭，则反之。
     // categoryText: '随笔', // 碎片化文章（_posts文件夹的文章）预设生成的分类值，默认'随笔'
 
     // bodyBgImg: [
@@ -88,7 +89,7 @@ module.exports = {
     // sidebarOpen: false, // 初始状态是否打开侧边栏，默认true
     // pageButton: false, // 是否显示快捷翻页按钮，默认true
 
-    sidebar: 'structuring', // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | 自定义    温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
+    sidebar: { mode: 'structuring', collapsable: false }, // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | 自定义    温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
 
     // author: {
     //   // 文章默认的作者信息，可在md文件中单独配置此信息 String | {name: String, link: String}
@@ -130,7 +131,8 @@ module.exports = {
     },
     htmlModules: {
       pageB: `
-        <p>如果你有不错的资源，欢迎在留言区留言，一起共建前端知识库。</p>
+        </br></br>
+        <div class="custom-block tip"><p class="custom-block-title">共建知识库</p> <p>如果您有不错的资源，欢迎在留言区留言。</p></div>
       `
     } // 插入hmtl(广告)模块
   },

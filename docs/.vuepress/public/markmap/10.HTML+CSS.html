@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.2.0/dist/style.min.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.2.7"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.2.0/dist/index.umd.min.js"></script><script>(r => {
+          setTimeout(r);
+        })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, data) => {
+        const {
+          Markmap
+        } = getMarkmap();
+        window.mm = Markmap.create('svg#mindmap', getOptions == null ? void 0 : getOptions(), data);
+      })(() => window.markmap,null,{"t":"heading","d":1,"p":{"lines":[1,2]},"v":"HTML+CSS","c":[{"t":"heading","d":2,"p":{"lines":[3,4]},"v":"学习目标","c":[{"t":"heading","d":3,"p":{"lines":[4,5]},"v":"熟悉常见<a href=\"https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element\" target=\"_blank\">HTML</a>"},{"t":"heading","d":3,"p":{"lines":[5,6]},"v":"熟悉基本<a href=\"https://developer.mozilla.org/zh-CN/docs/Learn/CSS\" target=\"_blank\">CSS</a>"},{"t":"heading","d":3,"p":{"lines":[6,7]},"v":"实现常见布局","c":[{"t":"heading","d":4,"p":{"lines":[7,8]},"v":"flex布局","c":[{"t":"list_item","d":6,"p":{"lines":[8,9]},"v":"<a href=\"http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html\" target=\"_blank\">语法篇</a>"},{"t":"list_item","d":6,"p":{"lines":[9,10]},"v":"<a href=\"http://www.ruanyifeng.com/blog/2015/07/flex-examples.html\" target=\"_blank\">实例篇</a>"}]},{"t":"heading","d":4,"p":{"lines":[10,11]},"v":"<a href=\"https://lhammer.cn/You-need-to-know-css/#/zh-cn/double-wing-layout?v=1\" target=\"_blank\">双飞翼布局</a>"},{"t":"heading","d":4,"p":{"lines":[11,12]},"v":"<a href=\"https://xugaoyi.com/pages/df9e7c7214fa5046/\" target=\"_blank\">圣杯布局</a>"}]},{"t":"heading","d":3,"p":{"lines":[13,14]},"v":"能够仿写常见电商网站布局"}]},{"t":"heading","d":2,"p":{"lines":[15,16]},"v":"HTML/HTML5","c":[{"t":"heading","d":3,"p":{"lines":[16,17]},"v":"<a href=\"https://www.runoob.com/html/html-tutorial.html\" target=\"_blank\">HTML元素</a>"},{"t":"heading","d":3,"p":{"lines":[17,18]},"v":"<a href=\"https://www.runoob.com/html/html5-new-element.html\" target=\"_blank\">HTML5新元素</a>"}]},{"t":"heading","d":2,"p":{"lines":[19,20]},"v":"CSS/CSS3","c":[{"t":"heading","d":3,"p":{"lines":[20,21]},"v":"<a href=\"https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/CSS_basics\" target=\"_blank\">CSS基础</a>"},{"t":"heading","d":3,"p":{"lines":[21,22]},"v":"<a href=\"https://www.runoob.com/cssref/css-selectors.html\" target=\"_blank\">选择器</a>","c":[{"t":"list_item","d":5,"p":{"lines":[22,23]},"v":"<a href=\"https://www.runoob.com/w3cnote/css-style-priority.html\" target=\"_blank\">优先级</a>"}]},{"t":"heading","d":3,"p":{"lines":[23,24]},"v":"<a href=\"https://www.runoob.com/css/css-boxmodel.html\" target=\"_blank\">盒模型</a>"},{"t":"heading","d":3,"p":{"lines":[24,25]},"v":"定位","c":[{"t":"list_item","d":5,"p":{"lines":[25,26]},"v":"<a href=\"https://www.runoob.com/css/css-positioning.html\" target=\"_blank\">position</a>"},{"t":"list_item","d":5,"p":{"lines":[26,27]},"v":"<a href=\"http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html\" target=\"_blank\">flex</a>"},{"t":"list_item","d":5,"p":{"lines":[27,28]},"v":"<a href=\"https://www.runoob.com/css3/css-grid-container.html\" target=\"_blank\">grid</a>"}]},{"t":"heading","d":3,"p":{"lines":[28,29]},"v":"<a href=\"https://www.runoob.com/css3/css3-tutorial.html\" target=\"_blank\">CSS3</a>","c":[{"t":"list_item","d":5,"p":{"lines":[29,30]},"v":"<a href=\"https://www.runoob.com/css3/css3-2dtransforms.html\" target=\"_blank\">转换</a>"},{"t":"list_item","d":5,"p":{"lines":[30,31]},"v":"<a href=\"https://www.runoob.com/css3/css3-transitions.html\" target=\"_blank\">过渡</a>"},{"t":"list_item","d":5,"p":{"lines":[31,32]},"v":"<a href=\"https://www.runoob.com/css3/css3-animations.html\" target=\"_blank\">动画</a>"}]}]}]})</script>
+</body>
+</html>
