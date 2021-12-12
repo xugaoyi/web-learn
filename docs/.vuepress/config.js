@@ -131,8 +131,11 @@ module.exports = {
     },
     htmlModules: {
       pageB: `
-        </br></br>
-        <div class="custom-block tip"><p class="custom-block-title">共建知识库</p> <p>如果您有不错的资源，欢迎在留言区留言。</p></div>
+        <div class="line-between"></div>
+        <div class="article-footer">
+          <div class="block-title">邀您共建知识库</div>
+          <div class="block-content">如果您有不错的资源，欢迎在留言区留言。</div>
+        </div>
       `
     } // 插入hmtl(广告)模块
   },
