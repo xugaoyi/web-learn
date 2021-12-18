@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>时钟桌面</title>
     <style>
         body{
             background: #0d1320;
@@ -70,7 +70,7 @@
             if(showSymbl){
                 timer.innerHTML = `${hour.padStart(2,'0')}<span>:</span>${minute.padStart(2,'0')}`
             }else{
-                timer.innerHTML = `${hour.padStart(2,'0')}<span style="color:#0d1320">:</span>${minute.padStart(2,'0')}`
+                timer.innerHTML = `${hour.padStart(2,'0')}<span style="opacity:0">:</span>${minute.padStart(2,'0')}`
             }
             date.innerHTML = `${month.padStart(2,'0')}-${day.padStart(2,'0')} 周${week}`
 
