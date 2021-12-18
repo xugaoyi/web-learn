@@ -11,26 +11,28 @@ module.exports = {
   // 主题配置
   themeConfig: {
     nav: [
-      // { text: '首页', link: '/' },
-      { text: '前端知识图谱', link: '/html-css/' },
-      // {
-      //   text: '前端知识图谱',
-      //   link: '/web/',
-      //   items: [
-      //     { text: 'HTML+CSS', link: '/html-css/' },
-      //     // {
-      //     //   text: '前端文章',
-      //     //   items: [
-      //     //     { text: 'JavaScript', link: '/pages/8143cc480faf9a11/' },
-      //     //     // { text: 'Vue', link: '/pages/5d463fbdb172d43b/' },
-      //     //   ],
-      //     // },
-      //   ],
-      // },
+      // { text: '前端知识图谱', link: '/' },
+      {
+        text: '前端知识图谱',
+        link: '/',
+        items: [
+          { text: 'Web前端知识图谱', link: '/' },
+          { text: 'HTML+CSS', link: '/html-css/' },
+          { text: 'JavaScript', link: '/javascript/' },
+          // {
+          //   text: '前端文章',
+          //   items: [
+          //     { text: 'JavaScript', link: '/pages/8143cc480faf9a11/' },
+          //     // { text: 'Vue', link: '/pages/5d463fbdb172d43b/' },
+          //   ],
+          // },
+        ],
+      },
       { text: '免费视频', link: '/pages/859f95/' },
-      { text: '常用工具', link: '/about/' },
-      { text: '摸鱼必备', link: '/about/' },
-      { text: '资源分享', link: '/about/' },
+      { text: '常用工具', link: '/tools/' },
+      { text: '摸鱼必备', link: '/fish/' },
+      { text: '资源分享', link: '/resource/' },
+      { text: '学习技巧', link: '/skill/' },
       // {
       //   text: '收藏夹',
       //   link: '/pages/beb6c0bd8a66cea6/',
