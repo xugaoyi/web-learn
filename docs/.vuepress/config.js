@@ -30,7 +30,7 @@ module.exports = {
       },
       { text: '免费视频', link: '/pages/859f95/' },
       { text: '常用工具', link: '/tools/' },
-      { text: '摸鱼必备', link: '/fish/' },
+      { text: '摸鱼时间', link: '/fish/' },
       { text: '资源分享', link: '/resource/' },
       { text: '学习技巧', link: '/skill/' },
       // {

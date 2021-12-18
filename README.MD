@@ -16,7 +16,7 @@
 
 * [文档 (国内源)](https://doc.xugaoyi.com/)
 * [文档 (github源)](https://xugaoyi.github.io/vuepress-theme-vdoing-doc/)
-* [效果：Evan's blog](https://xugaoyi.com/) -->
+* [效果：Evan's blog](https://xugaoyi.com/)
 
 
 ## 介绍
@@ -32,9 +32,9 @@
 * 案例2：[仅博客站](https://xugaoyi.github.io/vdoing-demo-blog/)
 * 案例3：[仅知识库](https://xugaoyi.github.io/vdoing-demo-repository/)
 * 案例4：[文档站](https://xugaoyi.github.io/vuepress-theme-vdoing-doc/)
+-->
 
-
-## 快速上手
+## 使用
 
 ```bash
 # clone the project
@@ -50,7 +50,7 @@ npm install # or yarn install
 npm run dev # or yarn dev
 ```
 
-## :sparkling_heart:支持这个项目
+## 支持这个项目
 
 如果你正在使用这个项目并感觉良好，或只是想要支持我继续开发，你可以通过以下二维码 一次性捐款。 我多半会买一杯 ~~咖啡~~ 茶。:tea:
 

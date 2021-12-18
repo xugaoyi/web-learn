@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: #0d1320;
+            overflow: hidden;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+        #timer{
+            text-align: center;
+            font-size:56vh;
+            line-height:56vh;
+            font-weight: bold;
+            color:#e2ecfd;
+        }
+        #date{
+            margin-top:0px;
+            text-align: center;
+            font-size:28vh;
+            line-height:28vh;
+
+            font-weight: bold;
+            color:#e2ecfd;
+        }
+        .about{
+            width:800px;
+            margin:0 auto;
+            padding-top:20px;
+            display: flex;
+            align-items : center;
+
+        }
+        .about .item{
+            color:white;
+            flex:1;
+            text-align: center;
+        }
+        #hug-sun img{
+            position: relative;
+            width:300px;
+            height:auto;;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="date">01月01日</div>
+    <div id="timer">00:00</div>
+
+    <script>
+        let showSymbl = true
+        function clock(){
+            let now = new Date()
+            let hour = now.getHours()+''
+            let minute = now.getMinutes() + ''
+            let month = (now.getMonth()+1)+''
+            let day = now.getDate()+''
+            console.log(now.getDate(),now.getDay())
+            let weeks = '日一二三四五六'.split('')
+            let week = weeks[now.getDay()]
+
+            if(showSymbl){
+                timer.innerHTML = `${hour.padStart(2,'0')}<span>:</span>${minute.padStart(2,'0')}`
+            }else{
+                timer.innerHTML = `${hour.padStart(2,'0')}<span style="color:#0d1320">:</span>${minute.padStart(2,'0')}`
+            }
+            date.innerHTML = `${month.padStart(2,'0')}-${day.padStart(2,'0')} 周${week}`
+
+            showSymbl = !showSymbl
+        }
+        clock()
+        setInterval(()=>{
+            clock()
+        },1000)
+    </script>
+
+</body>
+</html>
