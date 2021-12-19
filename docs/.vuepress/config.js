@@ -14,7 +14,6 @@ module.exports = {
       // { text: '前端知识图谱', link: '/' },
       {
         text: '前端知识图谱',
-        link: '/',
         items: [
           { text: 'Web前端知识图谱', link: '/' },
           { text: 'HTML+CSS', link: '/html-css/' },
