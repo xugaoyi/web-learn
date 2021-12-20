@@ -154,6 +154,11 @@ module.exports = {
     ],
     ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
+
+    // QQ/微信分享的卡片
+    ['meta', { itemprop: 'name', content: '前端自学网' }], //
+    ['meta', { itemprop: 'image', content: 'https://webcoding.top/img/logo.png' }], //
+    ['meta', { itemprop: 'description', name: 'description', content: '前端自学网是资源和分享内容的大聚合。旨在为前端自学者提供一系列清晰的学习路线、靠谱的资源、高效的工具、和务实的文章。' }], //
   ],
 
   // 插件配置
