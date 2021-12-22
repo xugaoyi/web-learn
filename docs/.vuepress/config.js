@@ -3,7 +3,7 @@ module.exports = {
   theme: require.resolve('../../theme-vdoing'), // 使用本地主题
 
   title: "前端自学网",
-  description: '前端自学网是资源和分享内容的大聚合。为前端自学者提供一系列清晰的学习路线、靠谱的资源、高效的工具、和务实的文章。',
+  description: '前端自学网聚合了前端相关的资源和内容，为前端自学者提供一系列清晰的知识图谱、靠谱的资源、实用的技巧、高效的工具、和务实的文章等。',
   markdown: {
     lineNumbers: true, // 代码行号
   },
@@ -27,11 +27,11 @@ module.exports = {
           // },
         ],
       },
-      { text: '免费视频', link: '/pages/859f95/' },
-      { text: '常用工具', link: '/tools/' },
-      { text: '摸鱼时间', link: '/fish/' },
+      // { text: '免费视频', link: '/pages/859f95/' },
       { text: '资源分享', link: '/resource/' },
       { text: '学习技巧', link: '/skill/' },
+      { text: '常用工具', link: '/tools/' },
+      { text: '摸鱼时间', link: '/fish/' },
       // {
       //   text: '收藏夹',
       //   link: '/pages/beb6c0bd8a66cea6/',
@@ -154,11 +154,6 @@ module.exports = {
     ],
     ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
-
-    // QQ/微信分享的卡片
-    ['meta', { itemprop: 'name', content: '前端自学网' }], //
-    ['meta', { itemprop: 'image', content: 'https://webcoding.top/img/logo.png' }], //
-    ['meta', { itemprop: 'description', name: 'description', content: '前端自学网是资源和分享内容的大聚合。为前端自学者提供一系列清晰的学习路线、靠谱的资源、高效的工具、和务实的文章。' }], //
   ],
 
   // 插件配置
