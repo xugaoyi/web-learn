@@ -33,7 +33,8 @@ module.exports = {
         link: '/resource/',
         items: [
           { text: '前端资源', link: '/resource/' },
-          { text: '常用轮子', link: '/wheel/' },
+          { text: '常用库收集', link: '/wheel/' },
+          { text: '前端库收集', link: '/repository/' },
         ],
       },
       { text: '学习技巧', link: '/skill/' },
