@@ -40,6 +40,7 @@ module.exports = {
       { text: '学习技巧', link: '/skill/' },
       { text: '常用工具', link: '/tools/' },
       { text: '摸鱼时间', link: '/fish/' },
+      { text: '摘录', link: '/excerpt/' },
       // {
       //   text: '收藏夹',
       //   link: '/pages/beb6c0bd8a66cea6/',
@@ -276,5 +277,10 @@ module.exports = {
         },
       },
     ],
+  ],
+
+  // 监听文件变化并重新构建
+  extraWatchFiles: [
+    '.vuepress/config.js',
   ]
 }
